@@ -5,10 +5,8 @@
 	(uuid "14bfeb0d-3bb3-4185-ac78-bdfa858bfae3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Barrel_Jack"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Connector:Barrel_Jack_Switch"
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -20,7 +18,7 @@
 					)
 				)
 			)
-			(property "Value" "Barrel_Jack"
+			(property "Value" "Barrel_Jack_Switch"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -46,7 +44,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "DC Barrel Jack"
+			(property "Description" "DC Barrel Jack with an internal switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -73,7 +71,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Barrel_Jack_0_1"
+			(symbol "Barrel_Jack_Switch_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -111,7 +109,31 @@
 				)
 				(polyline
 					(pts
+						(xy 1.27 -2.286) (xy 1.905 -1.651)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
 					)
 					(stroke
 						(width 0.254)
@@ -145,7 +167,7 @@
 					)
 				)
 			)
-			(symbol "Barrel_Jack_1_1"
+			(symbol "Barrel_Jack_Switch_1_1"
 				(pin passive line
 					(at 7.62 2.54 180)
 					(length 2.54)
@@ -175,6 +197,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2276,6 +2316,10 @@
 		(uuid "3a1d5cb1-0460-40d9-baa6-d9ae0b1470e7")
 	)
 	(no_connect
+		(at 95.25 74.93)
+		(uuid "b29ca385-73d3-4a37-8799-f7495c6998e4")
+	)
+	(no_connect
 		(at 93.98 121.92)
 		(uuid "b2dbcffe-5c2e-4509-80c6-37d9b680e284")
 	)
@@ -2715,6 +2759,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 74.93) (xy 93.98 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9eca9a4-8770-458c-b26b-4274fa79af69")
+	)
+	(wire
+		(pts
 			(xy 123.19 72.39) (xy 123.19 67.31)
 		)
 		(stroke
@@ -2991,7 +3045,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 171.45 66.3448 0)
 			(effects
 				(font
@@ -3028,6 +3082,78 @@
 			(project ""
 				(path "/14bfeb0d-3bb3-4185-ac78-bdfa858bfae3"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Barrel_Jack_Switch")
+		(at 86.36 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "177f18c6-8bf6-41cc-8f71-399cee0ffa22")
+		(property "Reference" "J1"
+			(at 80.518 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Barrel Jack 3A"
+			(at 93.726 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+			(at 87.63 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Barrel Jack with an internal switch"
+			(at 86.36 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "35e33b37-2969-4dee-ae50-06827af74a33")
+		)
+		(pin "2"
+			(uuid "22faf5a5-a996-46b4-ac95-fa0a8c619664")
+		)
+		(pin "1"
+			(uuid "e58c2619-0b36-4816-be07-9e48201a79bf")
+		)
+		(instances
+			(project ""
+				(path "/14bfeb0d-3bb3-4185-ac78-bdfa858bfae3"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3245,16 +3371,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 199.39 107.95 0)
+		(at 199.39 110.49 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4660d5ed-4444-47c6-b5d5-978a65f082a5")
 		(property "Reference" "J4"
-			(at 201.93 107.9499 0)
+			(at 201.93 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3263,7 +3389,7 @@
 			)
 		)
 		(property "Value" "LED 2"
-			(at 201.93 110.4899 0)
+			(at 201.93 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,8 +3397,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 199.39 107.95 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+			(at 199.39 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,7 +3407,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 199.39 107.95 0)
+			(at 199.39 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3290,7 +3416,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 199.39 107.95 0)
+			(at 199.39 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,7 +3467,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 172.085 78.74 0)
 			(effects
 				(font
@@ -3545,7 +3671,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 203.962 69.85 90)
 			(effects
 				(font
@@ -3681,7 +3807,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
 			(at 184.15 67.31 0)
 			(effects
 				(font
@@ -4092,16 +4218,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 154.94 107.95 0)
+		(at 154.94 110.49 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8dabe370-792b-4257-b484-3b2e0e9f2acd")
 		(property "Reference" "J3"
-			(at 157.48 107.9499 0)
+			(at 157.226 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +4236,7 @@
 			)
 		)
 		(property "Value" "LED 1"
-			(at 157.48 110.4899 0)
+			(at 157.48 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4118,8 +4244,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 154.94 107.95 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+			(at 154.94 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4128,7 +4254,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 107.95 0)
+			(at 154.94 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4137,7 +4263,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 154.94 107.95 0)
+			(at 154.94 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,7 +4438,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10µF"
+		(property "Value" "4.7µF"
 			(at 127 77.4699 0)
 			(effects
 				(font
@@ -4321,7 +4447,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 122.2248 72.39 0)
 			(effects
 				(font
@@ -4746,7 +4872,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 190.8048 72.39 0)
 			(effects
 				(font
@@ -4856,75 +4982,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Barrel_Jack")
-		(at 86.36 74.93 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eebc1827-9267-422a-96a0-80f5ce88432c")
-		(property "Reference" "J1"
-			(at 86.36 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Barrel_Jack"
-			(at 86.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 73.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 87.63 73.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Barrel Jack"
-			(at 86.36 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c689afcd-668b-4c2c-a6f6-6e3f5a756425")
-		)
-		(pin "2"
-			(uuid "f313c9b8-0edf-4aa5-9bfc-e3176506d3dc")
-		)
-		(instances
-			(project ""
-				(path "/14bfeb0d-3bb3-4185-ac78-bdfa858bfae3"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 205.74 80.01 0)
 		(unit 1)
@@ -4952,7 +5009,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 203.962 80.01 90)
 			(effects
 				(font

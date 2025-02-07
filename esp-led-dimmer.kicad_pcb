@@ -163,6 +163,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C1779"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3655dfe7-ecc9-4600-a44e-7e26a5f4485e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ae0ba043-65cb-4080-8594-15325f6dfef5")
 		(sheetname "Root")
@@ -316,7 +328,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.SilkS")
 			(uuid "3d995330-69b0-4b1f-a726-00edad8953d1")
 			(effects
@@ -327,7 +339,7 @@
 			)
 		)
 		(property "Value" "100µF"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(uuid "c1d77b78-c379-4af6-a794-e35b0d4403f0")
 			(effects
@@ -369,6 +381,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "80be93ca-0fd3-4f67-97a8-6e27f6962183")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C15008"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d18d3c25-72ca-458e-94f7-8335359d72e9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -482,7 +506,7 @@
 			(uuid "2ed48050-c04e-4d5d-be73-36f93adf9b93")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "38670041-aae4-4e98-827f-25c5ca1ee5d3")
 			(effects
@@ -583,6 +607,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b63212f1-b2eb-4bb7-866f-492e32bc6b9e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "091770ad-6430-4230-994d-32b3f5e82360")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -803,6 +839,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C159006"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "81abeb0c-1868-43d2-8977-eb95572488e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f44c7b1e-311d-4c9a-8902-44f9eaacc5f5")
 		(sheetname "Root")
@@ -1009,6 +1057,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f10dc61d-c12f-435b-b474-4ee08a662462")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2935984"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "78cf0191-a097-4a82-8aed-e7630a8caf31")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1362,6 +1422,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a298cd44-1578-4289-80e8-5984b9d00883")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C720558"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ba56e272-a3f2-46ed-a394-41ca1782633c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1766,6 +1838,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C15195"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "91989135-a5a8-494d-999a-b52b74f9c558")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1580f76e-3ab8-4f4c-8fed-2cef9a0211c1")
 		(sheetname "Root")
@@ -1919,7 +2003,7 @@
 		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "Q2"
-			(at 2.015834 1.206004 360)
+			(at 2.015834 1.206004 0)
 			(layer "F.SilkS")
 			(uuid "53ccddef-0bb9-4979-bafe-bd27561c0f32")
 			(effects
@@ -1930,7 +2014,7 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "362fb765-91aa-4bff-8afa-75cb285b59ea")
 			(effects
@@ -1941,7 +2025,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c745e902-ef6e-42ae-99ad-e4f2c8f229bc")
@@ -1953,7 +2037,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c256a39c-79a2-446d-9b23-a5e59e52c636")
@@ -1965,7 +2049,7 @@
 			)
 		)
 		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "481c49e5-faff-4ab8-9ca9-5c002af1bd2a")
@@ -2124,7 +2208,7 @@
 			(uuid "57adab72-4be5-4aea-8339-ea8e16b51626")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "30709665-5e66-47cb-ad16-eba082dae9e6")
 			(effects
@@ -2236,6 +2320,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "85e9f534-91ab-415c-bd79-2db2e8fa81e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5188434"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1711967b-6632-4776-a72a-9d3e67eb7f3e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3233,6 +3329,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C9864"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0fd445af-b5b4-4464-b836-927597ae1571")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TI*SO*PowerPAD*ThermalVias*")
 		(path "/82fc3f9f-0a72-42b9-9c12-509f6b67fa12")
 		(sheetname "Root")
@@ -3577,7 +3685,7 @@
 		(descr "SOD-323")
 		(tags "SOD-323")
 		(property "Reference" "D1"
-			(at -2.75 0 360)
+			(at -2.75 0 0)
 			(layer "F.SilkS")
 			(uuid "6f0c2f61-40f3-470f-bf6d-499aafdafb1f")
 			(effects
@@ -3588,7 +3696,7 @@
 			)
 		)
 		(property "Value" "1N5819"
-			(at 0.1 1.9 360)
+			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "d93b20f1-3ce4-4b56-b3df-43915aa60785")
 			(effects
@@ -3630,6 +3738,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e3141467-8f85-4422-a7c5-a6b1750992ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "040370ca-d646-4e17-bd37-a0b6eab7f495")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3813,7 +3933,7 @@
 			(uuid "8d950b7a-3cdf-4fa3-bd51-90bda4e02f28")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.Fab")
 			(uuid "9ad06935-52d5-4845-a7dc-fb9e5f21a1f0")
 			(effects
@@ -3912,6 +4032,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f1a2bd61-44f8-477d-ad6b-d1e3807b5515")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "03c81fb5-7623-4986-82a7-f25b51cde2ea")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4743,6 +4875,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C5289430"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ffbad7a5-77ba-4d60-9ed9-6c9c473abfc9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/72a7fba1-eea0-45e3-b42a-15cd29a66893")
 		(sheetname "Root")
@@ -4889,7 +5033,7 @@
 			(uuid "5f42373d-c977-4216-82f2-d2d9f3bc089d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "83275431-1502-43d1-ade2-29d8acec964c")
 			(effects
@@ -6174,6 +6318,18 @@
 				(thickness 0.2)
 			)
 			(justify left bottom mirror)
+		)
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 140.3 117.9 0)
+		(layer "F.SilkS")
+		(uuid "230c307b-63a8-4ce5-90d6-e9ba671998b5")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 	(segment

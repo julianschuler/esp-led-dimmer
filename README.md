@@ -1,5 +1,8 @@
 # ESP LED Dimmer
 
+![Four dimmers](img/dimmers.jpg)
+*Four dimmers shown in different configurations from left to right: Fully assembled within a case, fully assembled, without the ESP-01 module and from the back.*
+
 ## Overview
 
 This repository contains the PCB files for a wireless dimmer for up to two monochromatic LED strips based on the ESP-01. It can e.g. be integrated into [Home Assistant](https://www.home-assistant.io/) using [ESPHome](https://esphome.io/).

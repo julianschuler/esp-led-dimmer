@@ -9,6 +9,8 @@ The dimmer is powered via a DC barrel jack and supports both 12V and 24V LED str
 It is designed to make use of the PCBA services of JLCPCB and uses as many basic parts as possible. You can use the awesome [KiCAD JLCPCB tools](https://github.com/Bouni/kicad-jlcpcb-tools) for exporting the corresponding fabrication files.
 Excluding the ESP-01 module, the cost per assembled PCB is around 5€.
 
+> **Warning:** Only power up the dimmer when the ESP-01 module is plugged in, otherwise it might get broken! This seems to be due to the power supply IC requiring a certain minimum current to be drawn.
+
 ## Using the dimmer with Home Assistant
 
 To use the dimmer with Home Assistant, create a new ESP8266 device in the [ESPHome Device Builder](https://esphome.io/guides/getting_started_hassio.html) and append the following lines to its YAML file:
